@@ -74,7 +74,7 @@
        <form class="formulario-fale-conosco" action="https://formcarry.com/s/4ZtNB_kxl91" method="POST"
         enctype="multipart/form-data">
             <h2>Solicite um Orçamento</h2>
-            <input placeholder="Seu Nome" type="text" name="nome" required>
+            <input placeholder="Seu Nome" type="text" name="nome" required pattern="^[a-zA-Z\s]{4,30}$">
             <input placeholder="Seu Telefone" type="tel" name="telefone" required pattern="[0-9]{10,11}">
             <textarea placeholder="Descreva seu problema aqui..." name="duvida" required></textarea>
             <button type="submit"> Pedir Orçamento</button>
