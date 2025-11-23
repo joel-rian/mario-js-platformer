@@ -89,7 +89,7 @@ video {
     color: white;
     font-size: 20px;
     cursor: pointer;
-
+    margin: 10px;
 }
 
 .header :hover {
@@ -208,6 +208,7 @@ textarea {
     }
 
     .header a {
+        margin: 4px;
         color: #ffffff;
         text-decoration: none;
 
