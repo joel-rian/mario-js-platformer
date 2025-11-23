@@ -75,7 +75,7 @@
         enctype="multipart/form-data">
             <h2>Solicite um Orçamento</h2>
             <input placeholder="Seu Nome" type="text" name="nome" required>
-            <input placeholder="Seu Telefone" type="tel" name="telefone" required>
+            <input placeholder="Seu Telefone" type="tel" name="telefone" required pattern="[0-9]+">
             <textarea placeholder="Descreva seu problema aqui..." name="duvida" required></textarea>
             <button type="submit"> Pedir Orçamento</button>
         </form>
