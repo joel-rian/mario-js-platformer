@@ -8,6 +8,6 @@ Link do Website:
 Org: Alex and Joel
 
 <a href="https://lnkd.in/dWy-xRhp">
-<img src="https://img1.picmix.com/output/stamp/normal/1/6/4/6/2466461_aadbf.gif"></a>
+<img src="https://media.tenor.com/PQEVmEXbkGgAAAAM/fist-bump-mario.gif"></a>
 
 Obs: Clique na imagem 😁
