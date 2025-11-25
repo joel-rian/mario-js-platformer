@@ -10,4 +10,3 @@ Org: Alex and Joel
 <a href="https://lnkd.in/dWy-xRhp">
 <img src="https://media.tenor.com/PQEVmEXbkGgAAAAM/fist-bump-mario.gif"></a>
 
-Obs: Clique na imagem 😁
