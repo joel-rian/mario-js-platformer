@@ -139,7 +139,6 @@ mascara.style.visibility = "visible"
 | :--- | :--- |
 | **Linguagem** | JavaScript (Vanilla) |
 | **Padrão** | DOM Manipulation |
-| **Paradigma** | Programação Procedural |
 | **Seletor** | CSS Selectors (querySelector) |
 | **Manipulação** | Inline Styles + CSS Classes |
 
