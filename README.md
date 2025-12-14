@@ -1,258 +1,84 @@
-# 💻 Análise de Código JavaScript: Sistema de Modais Interativos
+# 🎮 Mario & Luigi 
 
-## Descrição do Projeto
+A fun and interactive **2D Mario & Luigi web experience**, developed using **HTML, CSS, and JavaScript**, focused on creative animation, game physics, and responsive design.
 
-Desenvolvimento de um **sistema de modais interativos** em JavaScript Vanilla que implementa padrões profissionais de manipulação do DOM para criar experiências de usuário fluidas e responsivas. O código demonstra excelência técnica na criação de interfaces dinâmicas e reutilizáveis.
-[Projeto](https://joel-rian.github.io/Mario-And-Luidi/)
-## 🎯 Desafio
-
-Criar um sistema de abertura e fechamento de modais (formulários e galerias de imagens) que seja:
-- **Eficiente em performance** - Minimizar carga no navegador
-- **Fácil de manter** - Código limpo e bem organizado
-- **Profissional** - Seguir padrões da indústria
-- **Reutilizável** - Aplicável em múltiplos contextos
-- **Intuitivo** - Proporcionar boa experiência ao usuário
-
-## ✨ Solução: Análise de Pontos Fortes
-
-O código JavaScript demonstra uma implementação otimizada com os seguintes pontos fortes:
-
-### 1. **Seleção Eficiente do DOM**
-```javascript
-const form = document.querySelector(".formulario-fale-conosco")
-const mascara = document.querySelector(".mascara-formulario")
-const img = document.querySelector(".mario-desentupidor")
-const imgmascara = document.querySelector(".mascara-desentupidor")
-```
-
-**Por que é excelente:**
-- Usa `const` em vez de `var` (melhor escopo e segurança)
-- Seleciona elementos uma única vez (otimiza performance)
-- Armazena em variáveis reutilizáveis
-- Evita múltiplas buscas no DOM
-
-**Impacto:** 🚀 Performance otimizada - Navegador mais rápido
+This project recreates the nostalgic *Super Mario Bros.* atmosphere with a modern touch, serving as both a **creative front-end experiment** and a **demonstration of animation logic** in JavaScript.
 
 ---
 
-### 2. **Funções com Responsabilidade Clara**
-```javascript
-function cliqueinobotao() { /* abre formulário */ }
-function esconderform() { /* fecha formulário */ }
-function nossosservicos() { /* abre serviços */ }
-function esconderservicos() { /* fecha serviços */ }
-```
+## 🚀 Tech Stack
 
-**Por que é excelente:**
-- Cada função tem um único propósito (Princípio SOLID)
-- Nomes descritivos e autoexplicativos
-- Fácil de manter e debugar
-- Altamente reutilizável
-
-**Impacto:** 📚 Código profissional e sustentável
+| Area | Technologies |
+|------|---------------|
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Animation** | Keyframes, Canvas, requestAnimationFrame() |
+| **Deployment** | GitHub Pages / Vercel |
+| **Tools** | Visual Studio Code, Git, Figma (optional for assets) |
 
 ---
 
-### 3. **Manipulação Profissional de Estilos CSS**
-```javascript
-form.style.left = "50%"
-form.style.transform = "translateX(-50%)"
-mascara.style.visibility = "visible"
-```
+## 🧠 Features
 
-**Por que é excelente:**
-- Controla animações dinamicamente
-- Implementa centralização perfeita (left + transform)
-- Usa `visibility` corretamente
-- Cria efeito modal/overlay profissional
-
-**Impacto:** ✨ Interface moderna e profissional
+✅ Character movement and jumping controls  
+✅ Smooth animations (idle, jump, run)  
+✅ Responsive and lightweight layout  
+✅ Custom background and sprite integration  
+✅ Option to expand logic with collision detection or AI  
 
 ---
 
-### 4. **Padrão de Abertura e Fechamento (Toggle)**
-```javascript
-// Abre
-function cliqueinobotao() {
-    form.style.left = "50%"
-    form.style.transform = "translateX(-50%)"
-    mascara.style.visibility = "visible"
-}
+## ⚙️ How to Run Locally
 
-// Fecha
-function esconderform() {
-    form.style.left = "-300%"
-    form.style.transform = "translateX(0%)"
-    mascara.style.visibility = "hidden"
-}
-```
+```bash
+# Clone this repository
+git clone https://github.com/joel-rian/mario-js-platformer.git
 
-**Por que é excelente:**
-- Implementa padrão Open/Close (muito usado profissionalmente)
-- Cria experiência fluida entre estados
-- Fluxo lógico claro e fácil de entender
-- Escalável para múltiplos elementos
+# Navigate into the project folder
+cd mario-js-platformer
 
-**Impacto:** 🎭 Melhor experiência do usuário (UX)
+# Open index.html in your browser
 
 ---
 
-### 5. **Uso Estratégico de Máscara (Overlay)**
-```javascript
-const mascara = document.querySelector(".mascara-formulario")
-mascara.style.visibility = "visible"
-```
+## 🎯 **3️⃣ Publicar o projeto (deploy online)**
 
-**Por que é excelente:**
-- Cria foco visual no elemento importante
-- Bloqueia interação com fundo (previne ações indesejadas)
-- Padrão profissional usado em grandes aplicações
-- Melhora significativamente a usabilidade
+Para transformar esse projeto em um **demo page**, você pode:
 
-**Impacto:** 🎯 Interface intuitiva e profissional
+### 🔹 Opção 1: **GitHub Pages**
+1. Vá em **Settings > Pages**  
+2. Escolha a branch `main` e a pasta `/root`  
+3. Clique em **Save**  
+4. Depois copie o link gerado (algo como `https://joel-rian.github.io/mario-js-platformer/`)  
+5. Coloque esse link no topo do README (na seção “Live Demo”)
 
 ---
 
-## 📊 Análise de Qualidade
-
-| Aspecto | Avaliação | Descrição |
-| :--- | :--- | :--- |
-| **Legibilidade** | ⭐⭐⭐⭐⭐ | Código claro e bem organizado |
-| **Performance** | ⭐⭐⭐⭐⭐ | Otimizado para velocidade |
-| **Manutenibilidade** | ⭐⭐⭐⭐⭐ | Fácil de manter e evoluir |
-| **Boas Práticas** | ⭐⭐⭐⭐ | Segue padrões profissionais |
-| **Funcionalidade** | ⭐⭐⭐⭐⭐ | Implementação completa |
-
-### Score Geral
-
-```
-████████████████████░ 90%
-```
-
-**Avaliação:** Excelente - Código profissional e bem pensado
+### 🔹 Opção 2: **Vercel (mais moderno)**
+1. Crie conta em [vercel.com](https://vercel.com)  
+2. Conecte seu repositório  
+3. Deploy automático em segundos  
+4. O link ficará tipo:  
+   `https://mario-js-platformer.vercel.app`
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧱 **4️⃣ Melhorias técnicas simples (para deixar mais pro)**
 
-| Categoria | Tecnologias |
-| :--- | :--- |
-| **Linguagem** | JavaScript (Vanilla) |
-| **Padrão** | DOM Manipulation |
-| **Seletor** | CSS Selectors (querySelector) |
-| **Manipulação** | Inline Styles + CSS Classes |
-
----
-
-## 🎓 Conceitos Técnicos Demonstrados
-
-### 1. Seleção de Elementos DOM
-- ✅ `document.querySelector()` - Seleção precisa por CSS
-- ✅ Armazenamento em variáveis `const`
-
-### 2. Manipulação de Estilos
-- ✅ `element.style.property` - Alteração dinâmica de CSS
-- ✅ Propriedades: `left`, `transform`, `visibility`
-
-### 3. Lógica de Controle
-- ✅ Funções para encapsular lógica
-- ✅ Padrão de abertura/fechamento
-
-### 4. Interatividade Profissional
-- ✅ Modais e overlays
-- ✅ Animações com CSS
-- ✅ Feedback visual para usuário
+| Área | Sugestão |
+|------|-----------|
+| **CSS** | Adicione `@keyframes` para movimentos mais fluidos e transições |
+| **JavaScript** | Centralize a lógica da page num arquivo `script.js` |
+| **Responsividade** | Use `flex` e `vh/vw` para adaptar a page em telas menores |
+| **Som** | Adicione efeitos leves (click, hover, theme) com `<audio>(opcional)` controlado por JS |
+| **Otimização** | Compacte imagens e assets em `.webp` |
 
 ---
 
-## 💼 Aplicações Práticas
+## 💡 **5️⃣ Adicionar badge e estética pro README**
+No topo do README, adicione badges visuais para profissionalizar:
 
-Este padrão de código é utilizado em:
-
-- **Formulários modais** - Contato, login, cadastro
-- **Galerias de imagens** - Lightbox, carrossel
-- **Menus dropdown** - Navegação interativa
-- **Pop-ups e notificações** - Alertas visuais
-- **Abas e painéis** - Organização de conteúdo
-- **Modais de confirmação** - Ações críticas
-
----
-
-## 📈 Resultados Esperados
-
-O código JavaScript desenvolvido proporciona:
-
-- **Alta Performance:** Seleção eficiente do DOM reduz carga do navegador
-- **Melhor UX:** Padrões profissionais criam experiência fluida
-- **Manutenibilidade:** Código limpo facilita evolução futura
-- **Escalabilidade:** Estrutura reutilizável para múltiplos elementos
-- **Profissionalismo:** Segue boas práticas da indústria
-
----
-
-## 🏆 Conclusão
-
-Seu código JavaScript demonstra:
-
-✅ **Excelente compreensão** de manipulação do DOM  
-✅ **Código limpo** e profissional  
-✅ **Padrões de UX** bem implementados  
-✅ **Performance otimizada**  
-✅ **Boas práticas** de desenvolvimento  
-
-**Você está no caminho certo para se tornar um desenvolvedor front-end de excelência!**
-
----
-
-## 📝 Informações Técnicas
-
-| Propriedade | Valor |
-| :--- | :--- |
-| **Linguagem** | JavaScript (Vanilla) |
-| **Padrão** | DOM Manipulation |
-| **Complexidade** | Intermediária |
-| **Reutilização** | Alta |
-| **Manutenibilidade** | Excelente |
-| **Compatibilidade** | Navegadores modernos |
-
----
-
-## 🔗 Código Fonte
-
-```javascript
-const form = document.querySelector(".formulario-fale-conosco")
-const mascara = document.querySelector(".mascara-formulario")
-const img = document.querySelector(".mario-desentupidor")
-const imgmascara = document.querySelector(".mascara-desentupidor")
-
-function cliqueinobotao(){
-    form.style.left = "50%"
-    form.style.transform = "translateX(-50%)"
-    mascara.style.visibility = "visible"
-}
-
-function esconderform(){
-    form.style.left = "-300%"
-    form.style.transform = "translateX(0%)"
-    mascara.style.visibility = "hidden"
-}
-
-function nossosservicos(){
-    img.style.botton = "0"
-    img.style.left = "-20px"
-    img.style.transfrom = "translatex(-50%)"
-    imgmascara.style.visibility = "visible"
-}
-
-function esconderservicos(){
-    img.style.left = "-300%"
-    img.style.transform = "translateX(0%)"
-    imgmascara.style.visibility = "hidden"
-}
-```
-
----
-
-*Desenvolvido com excelência técnica* ✨
-
-**Desenvolvido por Yerijhon Rian**
+```markdown
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Deploy](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)
