@@ -69,7 +69,7 @@ Para transformar esse projeto em um **demo page**, você pode:
 | **CSS** | Adicione `@keyframes` para movimentos mais fluidos e transições |
 | **JavaScript** | Centralize a lógica da page num arquivo `script.js` |
 | **Responsividade** | Use `flex` e `vh/vw` para adaptar a page em telas menores |
-| **Som** | Adicione efeitos leves (click, hover, theme) com `<audio>(opcional)` controlado por JS |
+| **Som** | Adicione efeitos leves (click, hover, theme) com `<audio>` controlado por JS (opcional) |
 | **Otimização** | Compacte imagens e assets em `.webp` |
 
 ---
