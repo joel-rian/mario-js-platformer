@@ -27,19 +27,6 @@ This project recreates the nostalgic *Super Mario Bros.* atmosphere with a moder
 
 ---
 
-## ⚙️ How to Run Locally
-
-```bash
-# Clone this repository
-git clone https://github.com/joel-rian/mario-js-platformer.git
-
-# Navigate into the project folder
-cd mario-js-platformer
-
-# Open index.html in your browser
-
----
-
 ## 🎯 **3️⃣ Publicar o projeto (deploy online)**
 
 Para transformar esse projeto em um **demo page**, você pode:
@@ -82,3 +69,17 @@ No topo do README, adicione badges visuais para profissionalizar:
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Deploy](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)
+
+## ⚙️ How to Run Locally
+
+```bash
+# Clone this repository
+git clone https://github.com/joel-rian/mario-js-platformer.git
+
+# Navigate into the project folder
+cd mario-js-platformer
+
+# Open index.html in your browser
+
+---
+
